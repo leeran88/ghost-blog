@@ -38,3 +38,6 @@ jspm_packages
 
 # VS Code
 .vscode
+
+# Secret stuff
+set-production-variables.bat
