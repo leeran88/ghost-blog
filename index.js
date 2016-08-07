@@ -1,4 +1,4 @@
-require('newrelic');
+//require('newrelic');
 
 // # Ghost Startup
 // Orchestrates the startup of Ghost when run from command line.
