@@ -12,6 +12,7 @@ require('./core/server/overrides');
 require('./core/server/utils/startup-check').check();
 
 // Proceed with startup
+require('newrelic');
 express = require('express');
 ghost = require('./core');
 errors = require('./core/server/errors');
