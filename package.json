@@ -90,7 +90,6 @@
     "morgan": "1.7.0",
     "multer": "1.1.0",
     "netjet": "1.1.2",
-    "newrelic": "^1.29.0",
     "node-uuid": "1.4.7",
     "nodemailer": "0.7.1",
     "nopt": "3.0.6",
