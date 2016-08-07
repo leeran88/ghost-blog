@@ -41,3 +41,4 @@ jspm_packages
 
 # Secret stuff
 set-production-variables.bat
+ghost-dev.db
