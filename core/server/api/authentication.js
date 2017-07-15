@@ -440,7 +440,7 @@ authentication = {
                             i18n.t(
                                 'errors.api.authentication.unableToSendWelcomeEmail'
                             ),
-                            i18n.t('errors.api.authentication.checkEmailConfigInstructions', {url: 'http://support.ghost.org/mail/'})
+                            i18n.t('errors.api.authentication.checkEmailConfigInstructions', {url: 'https://docs.ghost.org/v0.11.9/docs/mail-config'})
                         );
                     });
                 })
@@ -587,8 +587,8 @@ authentication = {
 
                 var newAccessToken = globalUtils.uid(256),
                     refreshToken = globalUtils.uid(256),
-                    newAccessExpiry = Date.now() + globalUtils.ONE_HOUR_MS,
-                    refreshExpires = Date.now() + globalUtils.ONE_WEEK_MS;
+                    newAccessExpiry = Date.now() + globalUtils.ONE_MONTH_MS,
+                    refreshExpires = Date.now() + globalUtils.SIX_MONTH_MS;
 
                 return dataProvider.Accesstoken.add({
                     token: newAccessToken,
@@ -609,7 +609,7 @@ authentication = {
                         return {
                             access_token: newAccessToken,
                             refresh_token: refreshToken,
-                            expires_in: globalUtils.ONE_HOUR_S
+                            expires_in: globalUtils.ONE_MONTH_S
                         };
                     });
             });
